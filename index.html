@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Travelcom</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__main">
+				<a href="/" class="header__logo">
+					<img src="img/icons/logo.svg" alt="logo">
+				</a>
+				<div class="header__right">
+					<nav class="header__info">
+						<div class="header__auth">
+							<a href="#">
+								Log in
+								<img src="img/icons/user.svg" alt="Login">
+							</a>
+						</div>
+					</nav>
+					<a href="#" class="messages">
+						<div class="messages__icon">
+							<img src="img/icons/chat.svg" alt="chat">
+						</div>
+					</a>
+					<ul class="menu__list">
+						<li>
+							<a href="" class="menu__link active">
+								<img src="img/icons/flights.svg" alt="flights">
+								Flights
+							</a>
+						</li>
+						<li>
+							<a href="" class="menu__link">
+								<img src="img/icons/hotels.svg" alt="hotels">
+								Hotels
+							</a>
+						</li>
+						<li>
+							<a href="" class="menu__link">
+								<img src="img/icons/travel_org.svg" alt="travel_org">
+								Travel organization
+							</a>
+						</li>
+						<li>
+							<a href="" class="menu__link">
+								<img src="img/icons/help.svg" alt="help">
+								Help
+							</a>
+						</li>
+						<li>
+							<a href="" class="menu__link">
+								<img src="img/icons/about_us.svg" alt="about us">
+								About us
+							</a>
+						</li>
+						<li>
+							<a href="" class="menu__link">
+								<img src="img/icons/news.svg" alt="news">
+								News
+							</a>
+						</li>
+						<li>
+							<a href="" class="menu__link">
+								<img src="img/icons/contacts.svg" alt="contacts">
+								Contacts
+							</a>
+						</li>
+					</ul>
+					<div class="header__menu">
+						<button class="icon-close">
+							<img src="img/icons/close.svg" alt="close">
+						</button>
+						<button class="icon-menu">
+							<img src="img/icons/menu.svg" alt="menu">
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="offer">
+				<div class="offer__container">
+					<div class="offer__title">
+						Knows what you need
+					</div>
+					<div class="selene-form">
+						<ul class="selene-form__list">
+							<li>
+								<a href="#flights" class="selene-form__item active">
+									<img src="img/icons/flightsmode.svg" alt="flightsmode">
+									<span>Flights</span>
+								</a>
+							</li>
+							<li>
+								<a href="#hotels" class="selene-form__item">
+									<img src="img/icons/hotel.svg" alt="hotels">
+									<span>Hotels</span>
+								</a>
+							</li>
+							<li>
+								<a href="#travel-org" class="selene-form__item">
+									<img src="img/icons/travel.svg" alt="travel">
+									<span>Travel organization</span>
+								</a>
+							</li>
+						</ul>
+						<div class="selene-form__search">
+							<div class="form__search">
+								<div class="form__search--top">
+									<div class="top__item">
+										<button class="form__search--type form__search--dropdown">
+											<img src="img/icons/flight.svg" alt="flight">
+											<span>There and back</span>
+											<div class="drop">
+												<img src="img/icons/arrow-down.svg" alt="arrow-down">
+											</div>
+										</button>
+										<div class="top__item--info top__item--type">
+											<button>One way</button>
+											<button class="active">
+												There and back
+												<img src="img/icons/check.svg" alt="check">
+											</button>
+										</div>
+									</div>
+									<div class="top__item">
+										<button class="form__search--seat form__search--dropdown">
+											<img src="img/icons/person.svg" alt="person">
+											<span>1 Passengers</span>
+											<div class="drop">
+												<img src="img/icons/arrow-down.svg" alt="arrow-down">
+											</div>
+										</button>
+										<div class="top__item--info top__item--seat">
+											<span>Specify the exact number of passengers </span>
+											<div class="seat__list">
+												<div class="seat__person">
+													<div class="seat__person--info">
+														<span>Adults</span>
+														12 years and older
+													</div>
+													<div class="seat__person--number">
+														<button>
+															<img src="img/icons/minus.svg" alt="minus">
+														</button>
+														<span>1</span>
+														<button>
+															<img src="img/icons/plus.svg" alt="plus">
+														</button>
+													</div>
+												</div>
+												<div class="seat__person">
+													<div class="seat__person--info">
+														<span>Children</span>
+														From 2 to 11 years old
+													</div>
+													<div class="seat__person--number">
+														<button>
+															<img src="img/icons/minus.svg" alt="minus">
+														</button>
+														<span>1</span>
+														<button>
+															<img src="img/icons/plus.svg" alt="plus">
+														</button>
+													</div>
+												</div>
+												<div class="seat__person">
+													<div class="seat__person--info">
+														<span>Infants</span>
+														Under 2 years old, without a place
+													</div>
+													<div class="seat__person--number">
+														<button>
+															<img src="img/icons/minus.svg" alt="minus">
+														</button>
+														<span>1</span>
+														<button>
+															<img src="img/icons/plus.svg" alt="plus">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="top__item">
+										<button class="form__search--business form__search--dropdown">
+											<img src="img/icons/seat.svg" alt="seat">
+											<span>Business Class</span>
+											<div class="drop">
+												<img src="img/icons/arrow-down.svg" alt="arrow-down">
+											</div>
+										</button>
+										<div class="top__item--info top__item--business">
+											<button>Economy</button>
+											<button>First class</button>
+											<button class="active">
+												Business Class
+												<img src="img/icons/check.svg" alt="check">
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="form__search--form">
+									<form class="form">
+										<div class="form__row">
+											<div class="form__input">
+												<input type="text" placeholder="From">
+											</div>
+											<div class="form__separator">
+												<img src="img/icons/back-forth.svg" alt="back-forth">
+											</div>
+											<div class="form__input">
+												<input type="text" placeholder="Where">
+											</div>
+											<div class="form__date">
+												<button>2/03/24</button>
+												<div class="separator"></div>
+												<button>16/04/24</button>
+											</div>
+										</div>
+										<div class="form__button">
+											<button class="btn">
+												<img src="img/icons/search.svg" alt="search">
+												Search
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="directions">
+				<div class="directions__container">
+					<div class="directions__title">
+						Trending directions
+					</div>
+					<div class="directions__list">
+						<a href="#" class="directions__item">
+							<img src="img/images/image-1.png" alt="image 1">
+							<div class="directions__country">
+								<span>Rome</span>
+								<img src="img/images/rome.png" alt="rome">
+							</div>
+						</a>
+						<a href="#" class="directions__item">
+							<img src="img/images/image-2.png" alt="image 2">
+							<div class="directions__country">
+								<span>Paris</span>
+								<img src="img/images/paris.png" alt="paris">
+							</div>
+						</a>
+						<a href="#" class="directions__item">
+							<img src="img/images/image-3.png" alt="image 3">
+							<div class="directions__country">
+								<span>London</span>
+								<img src="img/images/london.png" alt="london">
+							</div>
+						</a>
+						<a href="#" class="directions__item">
+							<img src="img/images/image-4.png" alt="image 4">
+							<div class="directions__country">
+								<span>Maldives</span>
+								<img src="img/images/maldives.png" alt="maldives">
+							</div>
+						</a>
+						<a href="#" class="directions__item">
+							<img src="img/images/image-5.png" alt="image 5">
+							<div class="directions__country">
+								<span>Bali</span>
+								<img src="img/images/bali.png" alt="bali">
+							</div>
+						</a>
+						<a href="#" class="directions__item">
+							<img src="img/images/image-5.png" alt="image 6">
+							<div class="directions__country">
+								<span>Rio de Janeiro</span>
+								<img src="img/images/rio.png" alt="Rio de Janeiro">
+							</div>
+						</a>
+					</div>
+					<div class="directions__button">
+						<button class="btn">Know more</button>
+					</div>
+				</div>
+			</section>
+			<section class="blog">
+				<div class="blog__container">
+					<div class="blog__title">
+						A blog for inspiration
+					</div>
+					<div class="blog__list">
+						<div class="blog__list--left">
+							<a href="#" class="blog__item type-1">
+								<div class="blog__item--img">
+									<img src="img/images/blog-1.png" alt="blog image">
+								</div>
+								<span>4/05/2024</span>
+								<div class="blog__item--title">
+									Ski resorts in Europe
+								</div>
+								<div class="blog__item--text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
+							</a>
+							<a href="#" class="blog__item type-2">
+								<div class="blog__item--img">
+									<img src="img/images/blog-3.png" alt="blog image">
+								</div>
+								<span>4/05/2024</span>
+								<div class="blog__item--title">
+									The best summer houses in Santorini
+								</div>
+								<div class="blog__item--text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
+							</a>
+						</div>
+						<div class="blog__list--right">
+							<a href="#" class="blog__item type-3">
+								<div class="blog__item--img">
+									<img src="img/images/blog-2.png" alt="blog image">
+								</div>
+								<span>4/05/2024</span>
+								<div class="blog__item--title">
+									Gastro guide to Serbia
+								</div>
+								<div class="blog__item--text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
+							</a>
+							<a href="#" class="blog__item type-4">
+								<div class="blog__item--img">
+									<img src="img/images/blog-4.png" alt="blog image">
+								</div>
+								<span>4/05/2024</span>
+								<div class="blog__item--title">
+									Guide to the islands  of Greece
+								</div>
+								<div class="blog__item--text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
+							</a>
+							<div class="blog__list--button">
+								<button class="btn">
+									Know more
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq">
+				<div class="faq__container">
+					<div class="faq__title">
+						Frequently asked questions
+					</div>
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+						  <h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								How does Travelcom work?
+							</button>
+						  </h2>
+						  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							</div>
+						  </div>
+						</div>
+						<div class="accordion-item">
+						  <h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								How do the website and the app work?
+							</button>
+						  </h2>
+						  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							</div>
+						  </div>
+						</div>
+						<div class="accordion-item">
+						  <h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								How do I find and buy air tickets?
+							</button>
+						  </h2>
+						  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							</div>
+						  </div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading4">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+								I'm afraid of scammers. Am I sure I won't be tricked with a ticket?
+							  </button>
+							</h2>
+							<div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+								  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading5">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+								How do I book a ticket?
+							  </button>
+							</h2>
+							<div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+								  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading6">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+								How do I subscribe to the news?
+							  </button>
+							</h2>
+							<div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+								  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading7">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseThree">
+								How can I call you?
+							  </button>
+							</h2>
+							<div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+								  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading8">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapseThree">
+								I'm afraid of scammers. Am I sure I won't be tricked with a ticket?
+							  </button>
+							</h2>
+							<div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+								  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading9">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapseThree">
+								How do I subscribe to the news?
+							  </button>
+							</h2>
+							<div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+								  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. 
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="write">
+				<div class="write__container">
+					<div class="write__form">
+						<div class="write__title">
+							Any other questions?<br>
+							Write to us!
+						</div>
+						<form action="#">
+							<div class="write__row">
+								<div class="write__input">
+									<input type="text" placeholder="Phone">
+								</div>
+								<div class="write__input">
+									<input type="email" placeholder="E-mail">
+								</div>
+							</div>
+							<div class="write__textarea">
+								<textarea placeholder="Your question"></textarea>
+							</div>
+							<div class="write__button">
+								<button type="submit">
+									Send
+									<img src="img/icons/send.svg" alt="send">
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__menu">
+						<a href="#" class="footer__item">
+							Privacy Policy
+						</a>
+						<a href="#" class="footer__item">
+							Terms & Conditions
+						</a>
+						<a href="#" class="footer__item">
+							Cancellations & Refunds
+						</a>
+						<a href="#" class="footer__item">
+							FAQ
+						</a>
+					</div>
+					<div class="footer__social">
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/instagram.svg" alt="instagram">
+						</a>
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/facebook.svg" alt="facebook">
+						</a>
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/twitter.svg" alt="twitter">
+						</a>
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/linkedin.svg" alt="linkedin">
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__logo">
+						<a href="#">
+							<img src="img/icons/logo-2.svg" alt="logo">
+						</a>
+					</div>
+					<div class="footer__links">
+						<a href="#">
+							Rumors Limited
+						</a>
+						<a href="mailto:info@travelcom.com">
+							<img src="img/icons/mail.svg" alt="mail">
+							info@travelcom.com
+						</a>
+						<a href="#">
+							<img src="img/icons/location.svg" alt="location">
+							International House, 55 Longsmith Street, Gloucester, UKВ
+						</a>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					Copyright ©Travelcom. All Rights Reserved
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
