@@ -25,7 +25,7 @@
 				<div class="header__right">
 					<nav class="header__info">
 						<div class="header__auth">
-							<a href="#">
+							<a href="#" class="show_popup" rel="popup1">
 								Log in
 								<img src="img/icons/user.svg" alt="Login">
 							</a>
@@ -37,6 +37,9 @@
 						</div>
 					</a>
 					<ul class="menu__list">
+						<div class="menu__close">
+							<img src="img/icons/close-mob.svg" alt="close">
+						</div>
 						<li>
 							<a href="" class="menu__link active">
 								<img src="img/icons/flights.svg" alt="flights">
@@ -232,6 +235,15 @@
 												<div class="separator"></div>
 												<button>16/04/24</button>
 											</div>
+											<button class="form__passenger">
+												<div class="form__passenger--left">
+													<span>1 passenger</span>
+													Business Class
+												</div>
+												<div class="form__passenger--right">
+													<img src="img/icons/btn-right.svg" alt="btn right">
+												</div>
+											</button>
 										</div>
 										<div class="form__button">
 											<button class="btn">
@@ -305,7 +317,7 @@
 					<div class="blog__title">
 						A blog for inspiration
 					</div>
-					<div class="blog__list">
+					<div class="blog__list blog__list--desc">
 						<div class="blog__list--left">
 							<a href="#" class="blog__item type-1">
 								<div class="blog__item--img">
@@ -364,12 +376,78 @@
 							</div>
 						</div>
 					</div>
+					<div class="blog__list blog__list--mob">
+						<div class="blog__slider">
+							<div class="blog__list--left">
+								<a href="#" class="blog__item type-1">
+									<div class="blog__item--img">
+										<img src="img/images/blog-1.png" alt="blog image">
+									</div>
+									<span>4/05/2024</span>
+									<div class="blog__item--title">
+										Ski resorts in Europe
+									</div>
+									<div class="blog__item--text">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									</div>
+								</a>
+								<a href="#" class="blog__item type-1">
+									<div class="blog__item--img">
+										<img src="img/images/blog-3.png" alt="blog image">
+									</div>
+									<span>4/05/2024</span>
+									<div class="blog__item--title">
+										The best summer houses in Santorini
+									</div>
+									<div class="blog__item--text">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="blog__slider">
+							<div class="blog__list--right">
+								<a href="#" class="blog__item type-2">
+									<div class="blog__item--img">
+										<img src="img/images/blog-2.png" alt="blog image">
+									</div>
+									<span>4/05/2024</span>
+									<div class="blog__item--title">
+										Gastro guide to Serbia
+									</div>
+									<div class="blog__item--text">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									</div>
+								</a>
+								<a href="#" class="blog__item type-2">
+									<div class="blog__item--img">
+										<img src="img/images/blog-4.png" alt="blog image">
+									</div>
+									<span>4/05/2024</span>
+									<div class="blog__item--title">
+										Guide to the islands  of Greece
+									</div>
+									<div class="blog__item--text">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="blog__list--button">
+							<button class="btn">
+								Know more
+							</button>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="faq">
 				<div class="faq__container">
-					<div class="faq__title">
+					<div class="faq__title faq__title--desc">
 						Frequently asked questions
+					</div>
+					<div class="faq__title faq__title--mobile">
+						FAQ
 					</div>
 					<div class="accordion" id="accordionExample">
 						<div class="accordion-item">
@@ -531,7 +609,7 @@
 							FAQ
 						</a>
 					</div>
-					<div class="footer__social">
+					<div class="footer__social footer__social--desc">
 						<a href="#" class="footer__social--item">
 							<img src="img/icons/instagram.svg" alt="instagram">
 						</a>
@@ -547,6 +625,20 @@
 					</div>
 				</div>
 				<div class="footer__bottom">
+					<div class="footer__social footer__social--mob">
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/instagram.svg" alt="instagram">
+						</a>
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/facebook.svg" alt="facebook">
+						</a>
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/twitter.svg" alt="twitter">
+						</a>
+						<a href="#" class="footer__social--item">
+							<img src="img/icons/linkedin.svg" alt="linkedin">
+						</a>
+					</div>
 					<div class="footer__logo">
 						<a href="#">
 							<img src="img/icons/logo-2.svg" alt="logo">
@@ -571,6 +663,100 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="menu-bar">
+			<button>
+				<img src="img/icons/travel-bar.svg" alt="travel">
+				Travel
+			</button>
+			<button>
+				<img src="img/icons/hotel-bar.svg" alt="hotels">
+				Hotels
+			</button>
+			<button class="active">
+				<img src="img/icons/flightsmode-bar.svg" alt="flightsmode">
+				Flights
+			</button>
+			<button>
+				<img src="img/icons/chat-bar.svg" alt="chat">
+				Chat
+			</button>
+			<button class="show_popup" rel="popup1">
+				<img src="img/icons/user-bar.svg" alt="user">
+				Profile
+			</button>
+		</div>
+
+		<div class="overlay_popup"></div>
+
+		<div class="popup" id="popup1">
+			<p class="popup__title">Entrance</p>
+			<form class="popup__form">
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/email-alt.svg" alt="mail">
+					</div>
+					<input type="email" placeholder="Email">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/password.svg" alt="password">
+					</div>
+					<input type="password" placeholder="Password">
+				</div>
+				<div class="popup__form--checkbox">
+					<input type="checkbox" id="remember" name="remember" class="popup__form--input" checked="">
+					<label for="remember" class="popup__form--label">Remember me</label>
+				</div>
+				<div class="popup__small">
+					Don't you have an account? <a href="#" class="show_popup" rel="popup2">Register.</a>
+				</div>
+				<button class="popup__btn btn">
+					Log in
+				</button>
+			</form>
+		</div>
+
+		<div class="popup" id="popup2">
+			<p class="popup__title">Registration</p>
+			<form class="popup__form">
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/name.svg" alt="user">
+					</div>
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/email-alt.svg" alt="mail">
+					</div>
+					<input type="email" placeholder="Email">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/phone-bold.svg" alt="Phone">
+					</div>
+					<input type="text" placeholder="Phone number">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/password.svg" alt="password">
+					</div>
+					<input type="password" placeholder="Password">
+				</div>
+				<div class="popup__form--checkbox">
+					<input type="checkbox" id="remember2" name="remember" class="popup__form--input" checked="">
+					<label for="remember2" class="popup__form--label">Remember me</label>
+				</div>
+				<div class="popup__small">
+					Already have an account? <a href="#"class="show_popup" rel="popup1">Log in.</a>
+				</div>
+				<button class="popup__btn btn">
+					Registr
+				</button>
+			</form>
+		</div>
+
 	</div>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
