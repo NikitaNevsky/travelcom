@@ -748,6 +748,22 @@ input[type=number]::-webkit-inner-spin-button {
   display: none;
 }
 
+.accordion__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  max-width: 47%;
+}
+
+.accordion__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  max-width: 47%;
+}
+
 .accordion-item .accordion-button {
   padding: 14px 16px 14px 29px;
   border: 1px solid #207FBF;
@@ -776,7 +792,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 .accordion-item {
   width: 100%;
-  max-width: 47%;
   background: transparent;
   border: 0;
 }
@@ -1716,6 +1731,16 @@ body.main {
   .accordion {
     flex-direction: column;
     column-gap: 0;
+    row-gap: 15px;
+  }
+
+  .accordion__left {
+    max-width: 100%;
+    row-gap: 15px;
+  }
+
+  .accordion__right {
+    max-width: 100%;
     row-gap: 15px;
   }
 
