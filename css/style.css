@@ -2086,6 +2086,706 @@ body.main {
   display: none;
 }
 
+.orders {
+  width: 100%;
+}
+
+.orders__tabs {
+  margin-bottom: 25px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  width: max-content;
+  column-gap: 23px;
+}
+
+.nav-tabs .nav-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding: 10px 16.5px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: #ffffff;
+  background: #207FBF;
+  font-weight: bold;
+  border: 1px solid #207FBF;
+}
+
+.nav-tabs .nav-link:hover {
+  border: 1px solid #207FBF;
+}
+
+.orders__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.orders__item {
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.orders__flights--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.orders__flights--name {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.orders__flights--text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #B3B3B3;
+  line-height: 20px;
+}
+
+.orders__flights--left {
+  display: flex;
+  align-items: center;
+}
+
+.orders__flights--info {
+  margin-right: 29px;
+}
+
+.orders__flights--airlines {
+  display: flex;
+  align-items: center;
+}
+
+.orders__flights--airlines span {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.orders__flights--airlines img {
+  margin-right: 15px;
+}
+
+.orders__flights--price {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #000000;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.orders__flights--more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.orders__flights--more span {
+  font-weight: 600;
+  color: #207FBF;
+  margin-left: 7px;
+}
+
+.check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url('../img/icons/check-disable.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 17px;
+}
+
+.orders__flights--way {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  margin-top: -10px;
+}
+
+.way__item {
+  display: flex;
+  column-gap: 35px;
+  position: relative;
+}
+
+.way__item:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #207FBF;
+  position: absolute;
+  left: -39px;
+  top: 3px;
+}
+
+.way__item.from:after {
+  content: '';
+  width: 4px;
+  height: 85px;
+  background-color: #207FBF;
+  position: absolute;
+  left: -29px;
+  top: 10px;
+}
+
+.way__item--time, .way__item--country {
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3B3;
+  font-weight: 500;
+}
+
+.way__item--time span, 
+.way__item--country span {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.orders__hotels--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.orders__hotels--name {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.orders__hotels--price {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #000000;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.orders__hotels--more {
+  font-size: 16px;
+  line-height: 20px;
+  color: #9B9B9A;
+  text-align: right;
+}
+
+.orders__hotels--more span {
+  display: block;
+}
+
+.orders__hotels--parameters {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000000;
+}
+
+.parameters__bed, .parameters__people {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #000000;
+}
+
+.parameters__bed img {
+  margin-right: 20px;
+}
+
+.parameters__people {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #207FBF;
+}
+
+.parameters__people span {
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.orders__hotels--services {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+  align-items: flex-end;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+.services__item {
+  display: flex;
+  align-items: center;
+}
+
+.services__item img {
+  margin-right: 15px;
+}
+
+.services__item:first-child {
+  margin-right: 17px;
+}
+
+.services__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 15px;
+}
+
+.services__right--item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #000000;
+}
+
+.check.success {
+  background-image: url('../img/icons/check-green.svg');
+}
+
+.services {
+  display: none;
+}
+
+.way {
+  display: flex;
+  justify-content: space-between;
+}
+
+.way__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.way__right {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.favourite {
+  margin-bottom: 11px;
+}
+
+.services__button {
+  margin-top: 8px;
+}
+
+.services__button .btn {
+  padding: 10px 78px;
+  height: 44px;
+}
+
+.orders__rooms--top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orders__rooms--img {
+  width: 330px;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: -42px;
+  margin-right: 25px;
+}
+
+.orders__rooms--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orders__rooms--name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.orders__rooms--name .name {
+  margin-right: 7px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.orders__rooms--name .name span {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 3px;
+}
+
+.point, .metro {
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.show-map a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #207FBF;
+}
+
+.show-map a:hover {
+  color: #207FBF;
+  text-decoration: underline;
+}
+
+.orders__rooms--price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.orders__rooms--price span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #9B9B9A;
+  margin-bottom: 5px;
+  margin-right: 7px;
+}
+
+.orders__rooms--bottom {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.rating span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.rating span.green {
+  background-color: #42AC41;
+}
+
+.person {
+  color: #9B9B9A;
+  line-height: 20px;
+}
+
+.orders__rooms--button .btn {
+  height: 44px;
+  padding: 10px 26px;
+}
+
+.favourites__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 25px;
+}
+
+.orders__item.hotels {
+  padding: 3px 3px 23px 3px;
+  width: 100%;
+  max-width: 351px;
+}
+
+.hotels__top {
+  position: relative;
+}
+
+.hotels__top .favourite {
+  margin-bottom: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.hotels__top .favourite img {
+  filter: invert(100%);
+}
+
+.hotels__price {
+  display: flex;
+  align-items: flex-end;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  left: 12px;
+  top: 190px;
+}
+
+.hotels__price span {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  font-weight: 400;
+}
+
+.hotels__info .name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 58px;
+}
+
+.hotels__bottom {
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hotels__bottom .rating {
+  font-size: 13px;
+  line-height: 16px;
+} 
+
+.hotels__bottom .rating span {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.hotels__bottom .point {
+  margin-bottom: 0;
+  font-size: 11px;
+  line-height: 13px;
+  margin-left: auto;
+}
+
+.hotels__bottom .orders__rooms--button {
+  display: none;
+}
+
+.hotels__top--image {
+  width: 100%;
+}
+
+.hotels__top--image img {
+  width: 100%;
+}
+
+.orders__item.flights {
+  padding: 3px 3px 23px 3px;
+  width: 100%;
+  max-width: 351px;
+}
+
+.flights__top {
+  position: relative;
+}
+
+.flights__top--image {
+  width: 100%;
+}
+
+.flights__top--image img {
+  width: 100%;
+}
+
+.flights__top .favourite {
+  margin-bottom: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.flights__top .favourite img {
+  filter: invert(100%);
+}
+
+.flights__info .name {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #000000;
+  padding: 0 12px;
+  margin-bottom: 18px;
+}
+
+.hours {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3B3;
+  font-weight: 400;
+}
+
+.fly {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  padding: 0 12px;
+  position: relative;
+  height: 36px;
+  overflow: hidden;
+}
+
+.fly.many {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fly.many.show {
+  height: auto;
+}
+
+.fly__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fly.many:before {
+  content: '';
+  width: 16px;
+  height: 24px;
+  background-image: url('../img/icons/dropdown-blue.svg');
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 15px;
+  transition: all 0.3s ease;
+}
+
+.fly.many.show:before {
+  transform: rotate(-90deg);
+}
+
+.fly__item--img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.fly__item--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fly__item--info {
+  font-size: 13px;
+  line-height: 16px;
+  color: #B3B3B3;
+  font-weight: 500;
+}
+
+.fly__item--info span {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.flights__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin-top: 19px;
+  padding-top: 15px;
+  border-top: 1px solid #9B9B9A;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.flights__bottom {
+  line-height: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.flights__bottom span {
+  color: #9B9B9A;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.hotels__info .stars {
+  display: inline-block;
+}
+
+.hotels__info .stars img {
+  width: 24px;
+  height: 24px;
+}
+
+.hotels__info .name .point {
+  display: none;
+}
+
 @media (max-width: 992px) {
 
   [class*=__container] {
@@ -3019,6 +3719,427 @@ body.main {
     width: max-content;
     display: flex;
     column-gap: 15px;
+  }
+
+  .main__profile.orders .sidebar {
+    display: none;
+  }
+
+  .main__profile.orders .profile__top {
+    display: none;
+  }
+
+  .nav-tabs {
+    column-gap: 3px;
+    width: 100%;
+    max-width: max-content;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 5px 23px;
+    font-size: 12px;
+    line-height: 15px;
+    height: 40px;
+  }
+
+  .orders__flights--info {
+    margin-right: 0;
+  }
+
+  .orders__flights--left {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+
+  .orders__flights--name {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 3px;
+  }
+
+  .orders__flights--text {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .orders__flights--price {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 13px;
+  }
+
+  .orders__flights--airlines img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+  }
+
+  .orders__flights--airlines span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .orders__flights--more {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .check {
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+  }
+
+  .way__item--time, .way__item--country {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .way__item--time span, .way__item--country span {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 2px;
+  }
+
+  .way__item {
+    column-gap: 25px;
+  }
+
+  .way__item:before {
+    width: 12px;
+    height: 12px;
+    left: -17px;
+  }
+
+  .way__item.from:after {
+    width: 2px;
+    height: 50px;
+    left: -12px;
+    top: 12px;
+  }
+
+  .orders__flights--way {
+    padding-left: 15px;
+    row-gap: 20px;
+    margin-top: 16px;
+  }
+
+  .services__right {
+    display: none;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 9px;
+    margin-top: -10px;
+  }
+
+  .orders__hotels--name {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 3px;
+  }
+
+  .orders__hotels--price {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 6px;
+  }
+
+  .orders__hotels--top {
+    position: relative;
+  }
+
+  .parameters__top {
+    display: none;
+  }
+
+  .orders__hotels--more {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .services__right--item {
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    padding-left: 40px;
+    min-height: 22px;
+  }
+
+  .services__right--item .check {
+    order: 0;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    width: 22px;
+    height: 22px;
+  }
+
+  .parameters__bed, .parameters__people {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .parameters__people span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .orders__hotels--services {
+    margin-top: 14px;
+  }
+
+  .services__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .favourite {
+    width: 20px;
+    height: 20px;
+  }
+
+  .favourite img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .way__button .btn {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 20px;
+    height: 33px;
+  }
+
+  .way__left {
+    row-gap: 21px;
+  }
+
+  .way__right {
+    margin-top: 23px;
+  }
+
+  .orders__item.orders__rooms {
+    padding: 0 0 25px;
+  }
+
+  .orders__rooms--top {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .orders__rooms--img {
+    margin-right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .orders__rooms--top .favourite {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .orders__rooms--top .favourite img {
+    filter: invert(100%);
+  }
+
+  .orders__rooms--price {
+    position: absolute;
+    top: 170px;
+    left: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  .orders__rooms--price span {
+    font-size: 11px;
+    line-height: 13px;
+    color: #ffffff;
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+
+  .orders__rooms--name .name {
+    padding-left: 25px;
+    margin-right: 0;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 150px;
+  }
+
+  .orders__rooms--name .name .stars {
+    column-gap: 1px;
+    margin-bottom: -2px;
+    margin-left: 10px;
+  }
+
+  .orders__rooms--name .name .stars img {
+    width: 0;
+    height: 0;
+    position: relative;
+  }
+
+  .orders__rooms--name .name .stars:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/icons/star-balck.svg');
+    background-repeat: no-repeat;
+  }
+
+  .orders__rooms--name .name .stars:after {
+    content: '4';
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .point {
+    position: absolute;
+    right: 25px;
+    top: 240px;
+    margin-bottom: 0;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .metro {
+    display: none;
+  }
+
+  .show-map {
+    display: none;
+  }
+
+  .orders__rooms--bottom {
+    margin-top: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .rating {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .rating span {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .orders__rooms--bottom .person {
+    display: none;
+  }
+
+  .orders__rooms--button .btn {
+    height: 34px;
+    padding: 8px 11px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .services__button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .services__button .btn {
+    width: 85%;
+    height: 34px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 11px;
+  }
+
+  .flights__info .name {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .hours {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .fly__item--info span {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fly__item--info {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .flights__bottom span {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .flights__bottom {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .hotels__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hotels__price span {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .hotels__info .name {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+
+  .hotels__info .stars img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hotels__info .stars {
+    margin-left: 10px;
+  }
+
+  .hotels__bottom .orders__rooms--button {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .hotels__bottom .point {
+    display: none;
+  }
+
+  .hotels__info .name .point {
+    display: inline-block;
+    top: auto;
+    right: auto;
+    position: relative;
+    font-weight: 400;
+    margin-left: auto;
+    margin-top: 3px;
   }
   
 }
