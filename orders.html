@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Travelcom - Orders</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__main">
+				<a href="index.html" class="header__logo">
+					<img src="img/icons/logo.svg" alt="logo">
+				</a>
+				<div class="header__right">
+					<nav class="header__info">
+						<div class="header__auth">
+							<a href="profile.html">
+								John Snow
+								<img src="img/icons/user.svg" alt="Login">
+							</a>
+						</div>
+					</nav>
+					<a href="chat.html" class="messages">
+						<div class="messages__icon">
+							<img src="img/icons/chat.svg" alt="chat">
+						</div>
+					</a>
+					<ul class="menu__list">
+						<div class="menu__close">
+							<img src="img/icons/close-mob.svg" alt="close">
+						</div>
+						<li>
+							<a href="flights.html" class="menu__link">
+								<img src="img/icons/flights.svg" alt="flights">
+								Flights
+							</a>
+						</li>
+						<li>
+							<a href="hotels.html" class="menu__link">
+								<img src="img/icons/hotels.svg" alt="hotels">
+								Hotels
+							</a>
+						</li>
+						<li>
+							<a href="travel.html" class="menu__link">
+								<img src="img/icons/travel_org.svg" alt="travel_org">
+								Travel organization
+							</a>
+						</li>
+						<li>
+							<a href="help.html" class="menu__link">
+								<img src="img/icons/help.svg" alt="help">
+								Help
+							</a>
+						</li>
+						<li>
+							<a href="about.html" class="menu__link">
+								<img src="img/icons/about_us.svg" alt="about us">
+								About us
+							</a>
+						</li>
+						<li>
+							<a href="news.html" class="menu__link">
+								<img src="img/icons/news.svg" alt="news">
+								News
+							</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="menu__link">
+								<img src="img/icons/contacts.svg" alt="contacts">
+								Contacts
+							</a>
+						</li>
+					</ul>
+					<div class="header__menu">
+						<button class="icon-close">
+							<img src="img/icons/close.svg" alt="close">
+						</button>
+						<button class="icon-menu">
+							<img src="img/icons/menu.svg" alt="menu">
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main__profile orders">
+            <div class="profile__container">
+                <div class="profile">
+                    <div class="profile__top">
+                        <div class="profile__info">
+                            <div class="profile__user">
+                                <img src="img/icons/avatar.svg" alt="avatar">
+                                <span>John Snow</span>
+                            </div>
+                            <div class="profile__email">
+                                <div class="profile__label">
+                                    Email
+                                </div>
+                                <div class="profile__text">
+                                    jonsnow@mail.ru
+                                </div>
+                            </div>
+                            <div class="profile__phone">
+                                <div class="profile__label">
+                                    Phone number
+                                </div>
+                                <div class="profile__text">
+                                    +456 405 82 58
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__edit">
+                            <button class="profile__edit--btn">
+                                <img src="img/icons/edit-profile.svg" alt="edit-profile">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="profile__content">
+                        <div class="sidebar sidebar-noacc">
+                            <div class="sidebar__menu">
+                                <a href="orders.html" class="sidebar__menu--item active">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.34457 9.68388C7.34457 9.07883 7.34457 8.51412 7.34457 7.94941C7.34457 7.3242 7.45305 6.71915 7.75679 6.17461C8.40768 5.00485 9.4057 4.27879 10.7943 4.05694C13.0507 3.69391 15.1552 5.10569 15.5457 7.18302C15.5891 7.44521 15.6108 7.70739 15.6108 7.96958C15.6108 8.53429 15.6108 9.07883 15.6108 9.66371C15.6976 9.66371 15.7627 9.66371 15.8278 9.66371C16.2183 9.66371 16.6305 9.66371 17.0211 9.68388C17.6719 9.74439 18.1276 10.2083 18.171 10.8133C18.2577 12.1646 18.3228 13.5159 18.4096 14.847C18.4096 14.9478 18.3662 15.0688 18.3228 15.1495C18.1493 15.4117 17.9757 15.6739 17.7804 15.9562C17.5418 15.7545 17.3248 15.573 17.1078 15.4117C16.1532 14.6251 15.0467 14.3629 13.81 14.6049C12.4649 14.8671 11.315 15.9965 11.098 17.247C10.881 18.5176 11.2933 19.5865 12.3347 20.4336C13.6148 21.4823 14.8731 22.5311 16.1532 23.5798C16.8258 24.1244 17.6069 24.4269 18.4964 24.447C18.6483 24.447 18.8001 24.447 18.952 24.447C19.169 25.1731 18.6266 25.9193 17.8021 26C17.7153 26 17.6502 26 17.5635 26C13.5063 26 9.47079 26 5.41361 26C4.67594 26 4.15523 25.637 4.02505 25.0319C3.98166 24.8101 4.00336 24.5479 4.02505 24.3059C4.17693 21.7647 4.3288 19.2235 4.48067 16.6621C4.58915 14.7259 4.69763 12.81 4.82781 10.8738C4.8712 10.1276 5.41361 9.64355 6.21636 9.62338C6.6069 9.62338 6.97573 9.62338 7.38796 9.62338L7.34457 9.68388ZM13.2025 9.68388C13.2025 9.01833 13.2242 8.37295 13.2025 7.72756C13.1808 7.12251 12.812 6.67881 12.2262 6.39646C11.2065 5.91242 9.86132 6.59814 9.79623 7.64689C9.75284 8.29227 9.77454 8.95783 9.77454 9.62338C9.77454 9.64355 9.77454 9.66371 9.79623 9.68388H13.2242H13.2025Z" fill="#207FBF"/>
+                                        <path d="M18.38 19.1962C18.38 19.1962 18.4476 19.0946 18.4928 19.0539C19.9364 16.9604 21.4025 14.8872 22.8461 12.7937C23.207 12.2652 23.7258 11.9807 24.4476 12.001C25.5754 12.0417 26.3423 13.1799 25.8461 14.0945C25.598 14.5417 25.2822 14.9482 24.989 15.375C23.41 17.6515 21.8311 19.9279 20.2521 22.184C19.9138 22.6515 19.4852 22.9564 18.8537 22.997C18.4476 23.0173 18.0642 22.936 17.7484 22.6921C17.0266 22.1433 16.3499 21.5742 15.6281 21.0255C14.9514 20.497 14.2747 19.9482 13.6206 19.4198C12.9213 18.8506 12.8086 18.0173 13.3048 17.3669C13.9138 16.6149 15.0191 16.5132 15.8311 17.1636C16.6431 17.7937 17.4326 18.4441 18.2446 19.0742C18.2897 19.1149 18.3349 19.1352 18.4025 19.1759L18.38 19.1962Z" fill="#207FBF"/>
+                                    </svg>                                        
+                                    Orders
+                                </a>
+                                <a href="shopping-cart.html" class="sidebar__menu--item">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.5 1.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3C3 3.39782 3.15804 3.77936 3.43934 4.06066C3.72064 4.34196 4.10218 4.5 4.5 4.5H6.33L6.7875 6.333C6.79204 6.35411 6.79705 6.37511 6.8025 6.396L8.8395 14.541L7.5 15.879C5.61 17.769 6.948 21 9.621 21H22.5C22.8978 21 23.2794 20.842 23.5607 20.5607C23.842 20.2794 24 19.8978 24 19.5C24 19.1022 23.842 18.7206 23.5607 18.4393C23.2794 18.158 22.8978 18 22.5 18H9.621L11.121 16.5H21C21.2785 16.4999 21.5514 16.4222 21.7883 16.2757C22.0251 16.1292 22.2165 15.9196 22.341 15.6705L26.841 6.6705C26.9552 6.44187 27.0092 6.18784 26.9977 5.93251C26.9862 5.67718 26.9096 5.42903 26.7753 5.21159C26.641 4.99416 26.4533 4.81465 26.2301 4.69012C26.0069 4.56558 25.7556 4.50014 25.5 4.5H9.42L8.955 2.6355C8.87374 2.31113 8.68643 2.02321 8.42281 1.81748C8.15919 1.61175 7.83439 1.50001 7.5 1.5H4.5ZM24 24.75C24 25.3467 23.7629 25.919 23.341 26.341C22.919 26.7629 22.3467 27 21.75 27C21.1533 27 20.581 26.7629 20.159 26.341C19.7371 25.919 19.5 25.3467 19.5 24.75C19.5 24.1533 19.7371 23.581 20.159 23.159C20.581 22.7371 21.1533 22.5 21.75 22.5C22.3467 22.5 22.919 22.7371 23.341 23.159C23.7629 23.581 24 24.1533 24 24.75ZM9.75 27C10.3467 27 10.919 26.7629 11.341 26.341C11.7629 25.919 12 25.3467 12 24.75C12 24.1533 11.7629 23.581 11.341 23.159C10.919 22.7371 10.3467 22.5 9.75 22.5C9.15326 22.5 8.58097 22.7371 8.15901 23.159C7.73705 23.581 7.5 24.1533 7.5 24.75C7.5 25.3467 7.73705 25.919 8.15901 26.341C8.58097 26.7629 9.15326 27 9.75 27Z" fill="#207FBF"/>
+                                    </svg>                                                                              
+                                    Shopping Cart
+                                </a>
+                                <a href="favourites.html" class="sidebar__menu--item">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 24L13.55 22.7052C8.4 18.1243 5 15.0932 5 11.3951C5 8.36403 7.42 6 10.5 6C12.24 6 13.91 6.79455 15 8.04033C16.09 6.79455 17.76 6 19.5 6C22.58 6 25 8.36403 25 11.3951C25 15.0932 21.6 18.1243 16.45 22.7052L15 24Z" fill="#207FBF"/>
+                                    </svg>                                                                           
+                                    Favourites
+                                </a>
+                                <a href="notifications.html" class="sidebar__menu--item">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.9999 27.5C16.3749 27.5 17.4999 26.375 17.4999 25H12.4999C12.4999 25.663 12.7633 26.2989 13.2322 26.7678C13.701 27.2366 14.3369 27.5 14.9999 27.5ZM22.4999 20V13.75C22.4999 9.9125 20.4499 6.7 16.8749 5.85V5C16.8749 3.9625 16.0374 3.125 14.9999 3.125C13.9624 3.125 13.1249 3.9625 13.1249 5V5.85C9.53744 6.7 7.49994 9.9 7.49994 13.75V20L5.88744 21.6125C5.09994 22.4 5.64994 23.75 6.76244 23.75H23.2249C24.3374 23.75 24.8999 22.4 24.1124 21.6125L22.4999 20Z" fill="#207FBF"/>
+                                        <circle cx="23" cy="4" r="2" fill="#E30016"/>
+                                    </svg>                                                                   
+                                    Notifications
+                                </a>
+                            </div>
+                            <div class="sidebar__logout">
+                                <a href="index.html">
+                                    Log out of profile
+                                    <img src="img/icons/ion_exit.svg" alt="exit">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="profile__back">
+                            <a href="profile.html">
+                                Back
+                            </a>
+                        </div>
+                        <div class="profile__content--title">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.34457 9.68388C7.34457 9.07883 7.34457 8.51412 7.34457 7.94941C7.34457 7.3242 7.45305 6.71915 7.75679 6.17461C8.40768 5.00485 9.4057 4.27879 10.7943 4.05694C13.0507 3.69391 15.1552 5.10569 15.5457 7.18302C15.5891 7.44521 15.6108 7.70739 15.6108 7.96958C15.6108 8.53429 15.6108 9.07883 15.6108 9.66371C15.6976 9.66371 15.7627 9.66371 15.8278 9.66371C16.2183 9.66371 16.6305 9.66371 17.0211 9.68388C17.6719 9.74439 18.1276 10.2083 18.171 10.8133C18.2577 12.1646 18.3228 13.5159 18.4096 14.847C18.4096 14.9478 18.3662 15.0688 18.3228 15.1495C18.1493 15.4117 17.9757 15.6739 17.7804 15.9562C17.5418 15.7545 17.3248 15.573 17.1078 15.4117C16.1532 14.6251 15.0467 14.3629 13.81 14.6049C12.4649 14.8671 11.315 15.9965 11.098 17.247C10.881 18.5176 11.2933 19.5865 12.3347 20.4336C13.6148 21.4823 14.8731 22.5311 16.1532 23.5798C16.8258 24.1244 17.6069 24.4269 18.4964 24.447C18.6483 24.447 18.8001 24.447 18.952 24.447C19.169 25.1731 18.6266 25.9193 17.8021 26C17.7153 26 17.6502 26 17.5635 26C13.5063 26 9.47079 26 5.41361 26C4.67594 26 4.15523 25.637 4.02505 25.0319C3.98166 24.8101 4.00336 24.5479 4.02505 24.3059C4.17693 21.7647 4.3288 19.2235 4.48067 16.6621C4.58915 14.7259 4.69763 12.81 4.82781 10.8738C4.8712 10.1276 5.41361 9.64355 6.21636 9.62338C6.6069 9.62338 6.97573 9.62338 7.38796 9.62338L7.34457 9.68388ZM13.2025 9.68388C13.2025 9.01833 13.2242 8.37295 13.2025 7.72756C13.1808 7.12251 12.812 6.67881 12.2262 6.39646C11.2065 5.91242 9.86132 6.59814 9.79623 7.64689C9.75284 8.29227 9.77454 8.95783 9.77454 9.62338C9.77454 9.64355 9.77454 9.66371 9.79623 9.68388H13.2242H13.2025Z" fill="#207FBF"/>
+                                <path d="M18.38 19.1962C18.38 19.1962 18.4476 19.0946 18.4928 19.0539C19.9364 16.9604 21.4025 14.8872 22.8461 12.7937C23.207 12.2652 23.7258 11.9807 24.4476 12.001C25.5754 12.0417 26.3423 13.1799 25.8461 14.0945C25.598 14.5417 25.2822 14.9482 24.989 15.375C23.41 17.6515 21.8311 19.9279 20.2521 22.184C19.9138 22.6515 19.4852 22.9564 18.8537 22.997C18.4476 23.0173 18.0642 22.936 17.7484 22.6921C17.0266 22.1433 16.3499 21.5742 15.6281 21.0255C14.9514 20.497 14.2747 19.9482 13.6206 19.4198C12.9213 18.8506 12.8086 18.0173 13.3048 17.3669C13.9138 16.6149 15.0191 16.5132 15.8311 17.1636C16.6431 17.7937 17.4326 18.4441 18.2446 19.0742C18.2897 19.1149 18.3349 19.1352 18.4025 19.1759L18.38 19.1962Z" fill="#207FBF"/>
+                            </svg>
+                            Orders
+                        </div>
+                        <div class="orders">
+                            <div class="orders__tabs">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="flights-tab" data-bs-toggle="tab" data-bs-target="#flights" type="button" role="tab" aria-controls="flights" aria-selected="false">Flights</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="hotels-tab" data-bs-toggle="tab" data-bs-target="#hotels" type="button" role="tab" aria-controls="hotels" aria-selected="false">Hotels</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment" type="button" role="tab" aria-controls="payment" aria-selected="false">Awaiting payment</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                                    <div class="orders__list">
+                                        <div class="orders__item orders__flights">
+                                            <div class="orders__flights--top">
+                                                <div class="orders__flights--left">
+                                                    <div class="orders__flights--info">
+                                                        <div class="orders__flights--name">
+                                                            London - Paris
+                                                        </div>
+                                                        <div class="orders__flights--text">
+                                                            5 h, 10 min on the way
+                                                        </div>
+                                                    </div>
+                                                    <div class="orders__flights--airlines">
+                                                        <img src="img/images/airlines.png" alt="airlines">
+                                                        <span>Aegean Airlines</span>
+                                                    </div>
+                                                </div>
+                                                <div class="orders__flights--right">
+                                                    <div class="orders__flights--price">200 $</div>
+                                                    <div class="orders__flights--more">
+                                                        Buggage <span>+50 $</span>
+                                                        <div class="check"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="orders__flights--way">
+                                                <div class="way__item from">
+                                                    <div class="way__item--time">
+                                                        <span>11:10</span>
+                                                        2/03/24
+                                                    </div>
+                                                    <div class="way__item--country">
+                                                        <span>London</span>
+                                                         Luton Airport, LTN
+                                                    </div>
+                                                </div>
+                                                <div class="way__item">
+                                                    <div class="way__item--time">
+                                                        <span>11:10</span>
+                                                        2/03/24
+                                                    </div>
+                                                    <div class="way__item--country">
+                                                        <span>London</span>
+                                                         Luton Airport, LTN
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="orders__item orders__hotels">
+                                            <div class="orders__hotels--top">
+                                                <div class="orders__hotels--left">
+                                                    <div class="orders__hotels--info">
+                                                        <div class="orders__hotels--name">
+                                                            Double Room Standard
+                                                        </div>
+                                                        <div class="orders__hotels--parameters parameters__top">
+                                                            <div class="parameters__bed">
+                                                                <img src="img/icons/bed-sharp.svg" alt="bed">
+                                                                <span>Double bed</span>
+                                                            </div>
+                                                            <div class="parameters__people">
+                                                                <img src="img/icons/room-person.svg" alt="person">
+                                                                +2
+                                                                <span>Up to 3 people</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orders__hotels--right">
+                                                    <div class="orders__hotels--price">2000 $</div>
+                                                    <div class="orders__hotels--more">
+                                                        <span>6 nights, 2 adults,</span>
+                                                        1 child
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="services">
+                                                <div class="services__right--item">
+                                                    Breakfast
+                                                    <div class="check success"></div>
+                                                </div>
+                                                <div class="services__right--item">
+                                                    Free cancellation until Feb 28th
+                                                    <div class="check success"></div>
+                                                </div>
+                                                <div class="services__button">
+                                                    <button class="cart">
+                                                        <img src="img/icons/cart.svg" alt="cart">
+                                                    </button>
+                                                    <button class="btn">Buy</button>
+                                                </div>
+                                                <div class="orders__hotels--parameters">
+                                                    <div class="parameters__bed">
+                                                        <img src="img/icons/bed-sharp.svg" alt="bed">
+                                                        <span>Double bed</span>
+                                                    </div>
+                                                    <div class="parameters__people">
+                                                        <img src="img/icons/room-person.svg" alt="person">
+                                                        +2
+                                                        <span>Up to 3 people</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="orders__hotels--services">
+                                                <div class="services__left">
+                                                    <div class="services__list">
+                                                        <div class="services__item">
+                                                            <img src="img/icons/wi-fi.svg" alt="wi-fi">
+                                                            Free Wi‑Fi
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img src="img/icons/snowflake.svg" alt="snowflake">
+                                                            Conditioner
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img src="img/icons/bath.svg" alt="bath">
+                                                            Own bathroom
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="services__right">
+                                                    <div class="services__right--item">
+                                                        Breakfast
+                                                        <div class="check success"></div>
+                                                    </div>
+                                                    <div class="services__right--item">
+                                                        Free cancellation until Feb 28th
+                                                        <div class="check success"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+                                    <div class="orders__list">
+                                        <div class="orders__item orders__flights">
+                                            <div class="orders__flights--top">
+                                                <div class="orders__flights--left">
+                                                    <div class="orders__flights--info">
+                                                        <div class="orders__flights--name">
+                                                            London - Paris
+                                                        </div>
+                                                        <div class="orders__flights--text">
+                                                            5 h, 10 min on the way
+                                                        </div>
+                                                    </div>
+                                                    <div class="orders__flights--airlines">
+                                                        <img src="img/images/airlines.png" alt="airlines">
+                                                        <span>Aegean Airlines</span>
+                                                    </div>
+                                                </div>
+                                                <div class="orders__flights--right">
+                                                    <div class="orders__flights--price">200 $</div>
+                                                    <div class="orders__flights--more">
+                                                        Buggage <span>+50 $</span>
+                                                        <div class="check"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="orders__flights--way">
+                                                <div class="way__item from">
+                                                    <div class="way__item--time">
+                                                        <span>11:10</span>
+                                                        2/03/24
+                                                    </div>
+                                                    <div class="way__item--country">
+                                                        <span>London</span>
+                                                         Luton Airport, LTN
+                                                    </div>
+                                                </div>
+                                                <div class="way__item">
+                                                    <div class="way__item--time">
+                                                        <span>11:10</span>
+                                                        2/03/24
+                                                    </div>
+                                                    <div class="way__item--country">
+                                                        <span>London</span>
+                                                         Luton Airport, LTN
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
+                                    <div class="orders__list">
+                                        <div class="orders__item orders__hotels">
+                                            <div class="orders__hotels--top">
+                                                <div class="orders__hotels--left">
+                                                    <div class="orders__hotels--info">
+                                                        <div class="orders__hotels--name">
+                                                            Double Room Standard
+                                                        </div>
+                                                        <div class="orders__hotels--parameters parameters__top">
+                                                            <div class="parameters__bed">
+                                                                <img src="img/icons/bed-sharp.svg" alt="bed">
+                                                                <span>Double bed</span>
+                                                            </div>
+                                                            <div class="parameters__people">
+                                                                <img src="img/icons/room-person.svg" alt="person">
+                                                                +2
+                                                                <span>Up to 3 people</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orders__hotels--right">
+                                                    <div class="orders__hotels--price">2000 $</div>
+                                                    <div class="orders__hotels--more">
+                                                        <span>6 nights, 2 adults,</span>
+                                                        1 child
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="services">
+                                                <div class="services__right--item">
+                                                    Breakfast
+                                                    <div class="check success"></div>
+                                                </div>
+                                                <div class="services__right--item">
+                                                    Free cancellation until Feb 28th
+                                                    <div class="check success"></div>
+                                                </div>
+                                                <div class="services__button">
+                                                    <button class="cart">
+                                                        <img src="img/icons/cart.svg" alt="cart">
+                                                    </button>
+                                                    <button class="btn">Buy</button>
+                                                </div>
+                                                <div class="orders__hotels--parameters">
+                                                    <div class="parameters__bed">
+                                                        <img src="img/icons/bed-sharp.svg" alt="bed">
+                                                        <span>Double bed</span>
+                                                    </div>
+                                                    <div class="parameters__people">
+                                                        <img src="img/icons/room-person.svg" alt="person">
+                                                        +2
+                                                        <span>Up to 3 people</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="orders__hotels--services">
+                                                <div class="services__left">
+                                                    <div class="services__list">
+                                                        <div class="services__item">
+                                                            <img src="img/icons/wi-fi.svg" alt="wi-fi">
+                                                            Free Wi‑Fi
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img src="img/icons/snowflake.svg" alt="snowflake">
+                                                            Conditioner
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img src="img/icons/bath.svg" alt="bath">
+                                                            Own bathroom
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="services__right">
+                                                    <div class="services__right--item">
+                                                        Breakfast
+                                                        <div class="check success"></div>
+                                                    </div>
+                                                    <div class="services__right--item">
+                                                        Free cancellation until Feb 28th
+                                                        <div class="check success"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                                    There is nothing yet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__menu">
+						<a href="privacy-policy.html" class="footer__item">
+							Privacy Policy
+						</a>
+						<a href="terms-and-conditions.html" class="footer__item">
+							Terms & Conditions
+						</a>
+						<a href="cancellations-and-refunds.html" class="footer__item">
+							Cancellations & Refunds
+						</a>
+						<a href="faq.html" class="footer__item">
+							FAQ
+						</a>
+					</div>
+					<div class="footer__social footer__social--desc">
+						<a href="https://instagram.com/" class="footer__social--item">
+							<img src="img/icons/instagram.svg" alt="instagram">
+						</a>
+						<a href="https://facebook.com/" class="footer__social--item">
+							<img src="img/icons/facebook.svg" alt="facebook">
+						</a>
+						<a href="https://twitter.com/" class="footer__social--item">
+							<img src="img/icons/twitter.svg" alt="twitter">
+						</a>
+						<a href="https://linkedin.com/" class="footer__social--item">
+							<img src="img/icons/linkedin.svg" alt="linkedin">
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__social footer__social--mob">
+						<a href="https://instagram.com/" class="footer__social--item">
+							<img src="img/icons/instagram.svg" alt="instagram">
+						</a>
+						<a href="https://facebook.com/" class="footer__social--item">
+							<img src="img/icons/facebook.svg" alt="facebook">
+						</a>
+						<a href="https://twitter.com/" class="footer__social--item">
+							<img src="img/icons/twitter.svg" alt="twitter">
+						</a>
+						<a href="https://linkedin.com/" class="footer__social--item">
+							<img src="img/icons/linkedin.svg" alt="linkedin">
+						</a>
+					</div>
+					<div class="footer__logo">
+						<a href="#">
+							<img src="img/icons/logo-2.svg" alt="logo">
+						</a>
+					</div>
+					<div class="footer__links">
+						<a href="#">
+							Rumors Limited
+						</a>
+						<a href="mailto:info@travelcom.com">
+							<img src="img/icons/mail.svg" alt="mail">
+							info@travelcom.com
+						</a>
+						<a href="#">
+							<img src="img/icons/location.svg" alt="location">
+							International House, 55 Longsmith Street, Gloucester, UKВ
+						</a>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					Copyright ©Travelcom. All Rights Reserved
+				</div>
+			</div>
+		</footer>
+
+		<div class="menu-bar">
+			<a href="travel.html">
+				<img src="img/icons/travel-bar.svg" alt="travel">
+				Travel
+			</a>
+			<a href="hotels.html">
+				<img src="img/icons/hotel-bar.svg" alt="hotels">
+				Hotels
+			</a>
+			<a href="flights.html">
+				<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5746 20.4195L4.90172 18.408L6.10689 17.2011L8.97633 17.6034L13.4527 13.1207L4.5 8.23563L6.10689 6.62644L17.0681 9.44253L21.5732 4.98851C21.8984 4.66284 22.3051 4.5 22.7933 4.5C23.2814 4.5 23.6878 4.66284 24.0122 4.98851C24.3374 5.31418 24.5 5.72146 24.5 6.21034C24.5 6.69923 24.3374 7.10613 24.0122 7.43103L19.5359 11.9138L22.3479 22.8908L20.741 24.5L15.863 15.5345L11.3867 20.0172L11.7884 22.8908L10.5832 24.0977L8.5746 20.4195Z" fill="black"/>
+                    <path d="M8.5746 20.4195L4.90172 18.408L6.10689 17.2011L8.97633 17.6034L13.4527 13.1207L4.5 8.23563L6.10689 6.62644L17.0681 9.44253L21.5732 4.98851C21.8984 4.66284 22.3051 4.5 22.7933 4.5C23.2814 4.5 23.6878 4.66284 24.0122 4.98851C24.3374 5.31418 24.5 5.72146 24.5 6.21034C24.5 6.69923 24.3374 7.10613 24.0122 7.43103L19.5359 11.9138L22.3479 22.8908L20.741 24.5L15.863 15.5345L11.3867 20.0172L11.7884 22.8908L10.5832 24.0977L8.5746 20.4195Z" fill="#9B9B9A"/>
+                </svg>
+				Flights
+			</a>
+			<a href="chat.html">
+				<svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.96 17.1889V9.61111H4.4C3.08 9.61111 2 10.7111 2 12.0556V19.3889C2 20.7333 3.08 21.8333 4.4 21.8333H5.6V25.5L9.2 21.8333H15.2C16.52 21.8333 17.6 20.7333 17.6 19.3889V17.1644C17.5211 17.1817 17.4407 17.1903 17.36 17.1901H8.96V17.1889ZM23.6 3.5H12.8C11.48 3.5 10.4 4.6 10.4 5.94444V15.7222H18.8L22.4 19.3889V15.7222H23.6C24.92 15.7222 26 14.6234 26 13.2778V5.94444C26 4.6 24.92 3.5 23.6 3.5Z" fill="#9B9B9A"/>
+                </svg>
+				Chat
+			</a>
+			<a href="profile.html" class="active">
+                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 6.5C12.61 6.5 11.74 6.76392 10.9999 7.25839C10.2599 7.75285 9.68314 8.45566 9.34254 9.27792C9.00195 10.1002 8.91283 11.005 9.08647 11.8779C9.2601 12.7508 9.68869 13.5526 10.318 14.182C10.9474 14.8113 11.7492 15.2399 12.6221 15.4135C13.495 15.5872 14.3998 15.498 15.2221 15.1575C16.0443 14.8169 16.7471 14.2401 17.2416 13.5001C17.7361 12.76 18 11.89 18 11C18 9.80652 17.5259 8.66193 16.682 7.81802C15.8381 6.97411 14.6935 6.5 13.5 6.5Z" fill="#9B9B9A"/>
+                    <path d="M13.5 1.5C11.0277 1.5 8.61099 2.23311 6.55538 3.60663C4.49976 4.98015 2.89761 6.93238 1.95151 9.21646C1.00542 11.5005 0.757874 14.0139 1.24019 16.4386C1.7225 18.8634 2.91301 21.0907 4.66117 22.8388C6.40933 24.587 8.63661 25.7775 11.0614 26.2598C13.4861 26.7421 15.9995 26.4946 18.2835 25.5485C20.5676 24.6024 22.5199 23.0002 23.8934 20.9446C25.2669 18.889 26 16.4723 26 14C25.9962 10.686 24.678 7.50873 22.3347 5.16534C19.9913 2.82196 16.814 1.50378 13.5 1.5ZM20.6366 21.9696C20.6188 20.7984 20.1415 19.6809 19.3076 18.8582C18.4737 18.0355 17.35 17.5734 16.1786 17.5714H10.8214C9.65017 17.5736 8.52664 18.0359 7.69294 18.8586C6.85924 19.6812 6.38208 20.7985 6.36429 21.9696C4.74515 20.5239 3.60334 18.6204 3.09004 16.5113C2.57674 14.4022 2.71617 12.1869 3.48986 10.1588C4.26356 8.13069 5.63502 6.38542 7.42266 5.15408C9.21029 3.92274 11.3298 3.26342 13.5004 3.26342C15.6711 3.26342 17.7906 3.92274 19.5782 5.15408C21.3659 6.38542 22.7373 8.13069 23.511 10.1588C24.2847 12.1869 24.4242 14.4022 23.9109 16.5113C23.3976 18.6204 22.2557 20.5239 20.6366 21.9696Z" fill="#9B9B9A"/>
+                </svg>
+				Profile
+			</a>
+		</div>
+
+		<div class="overlay_popup"></div>
+
+		<div class="popup" id="popup1">
+			<p class="popup__title">Entrance</p>
+			<form class="popup__form">
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/email-alt.svg" alt="mail">
+					</div>
+					<input type="email" placeholder="Email">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/password.svg" alt="password">
+					</div>
+					<input type="password" placeholder="Password">
+				</div>
+				<div class="popup__form--checkbox">
+					<input type="checkbox" id="remember" name="remember" class="popup__form--input" checked="">
+					<label for="remember" class="popup__form--label">Remember me</label>
+				</div>
+				<div class="popup__small">
+					Don't you have an account? <a href="#" class="show_popup" rel="popup2">Register.</a>
+				</div>
+				<a href="profile.html" class="popup__btn btn">
+					Log in
+				</a>
+			</form>
+		</div>
+
+		<div class="popup" id="popup2">
+			<p class="popup__title">Registration</p>
+			<form class="popup__form">
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/name.svg" alt="user">
+					</div>
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/email-alt.svg" alt="mail">
+					</div>
+					<input type="email" placeholder="Email">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/phone-bold.svg" alt="Phone">
+					</div>
+					<input type="text" placeholder="Phone number">
+				</div>
+				<div class="popup__form--input">
+					<div class="popup__form--icon">
+						<img src="img/icons/password.svg" alt="password">
+					</div>
+					<input type="password" placeholder="Password">
+				</div>
+				<div class="popup__form--checkbox">
+					<input type="checkbox" id="remember2" name="remember" class="popup__form--input" checked="">
+					<label for="remember2" class="popup__form--label">Remember me</label>
+				</div>
+				<div class="popup__small">
+					Already have an account? <a href="#"class="show_popup" rel="popup1">Log in.</a>
+				</div>
+				<button class="popup__btn btn">
+					Registr
+				</button>
+			</form>
+		</div>
+
+	</div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
