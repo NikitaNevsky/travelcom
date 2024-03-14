@@ -44,6 +44,10 @@ $(document).ready(function() {
       $("body").scrollTop(0);
     });
 
+    $(".fly.many").click(function() {
+      $(".fly.many").toggleClass('show');
+    });
+
     $('.show_popup').click(function() { // Вызываем функцию по нажатию на кнопку 
       var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id 
       $(popup_id).show(); // Открываем окно
