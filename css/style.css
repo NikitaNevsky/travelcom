@@ -3330,6 +3330,10 @@ body.main {
   display: none;
 }
 
+.main__hotels .main__flights--top .selene-form__search {
+  padding-top: 0;
+}
+
 @media (max-width: 992px) {
 
   [class*=__container] {
