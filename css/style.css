@@ -4013,7 +4013,7 @@ body.main {
 }
 
 .hotel__images--mob {
-  display: none;
+  display: none!important;
 }
 
 @media (max-width: 992px) {
@@ -5776,7 +5776,7 @@ body.main {
   }
 
   .hotel__images--mob {
-    display: block;
+    display: block!important;
   }
 
   .hotel__info .owl-nav {
