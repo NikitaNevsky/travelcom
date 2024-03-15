@@ -57,6 +57,24 @@ $(document).ready(function() {
       $(this).toggleClass('active');
     });
 
+    $(".hotel__about--button button").click(function() {
+      $(".hotel__about--button button").toggleClass('show');
+      $(".about__more--list").toggleClass('show');
+    });
+
+    $(".form__parameters--beds").click(function() {
+      $(".top__item--beds").toggleClass('show');
+    });
+
+    $(".form__parameters--food").click(function() {
+      $(".top__item--food").toggleClass('show');
+    });
+
+    $(".comment__arrow").click(function() {
+      $(".comment__arrow").toggleClass('show');
+      $(".reviews__item").toggleClass('show');
+    });
+
     $('.show_popup').click(function() { // Вызываем функцию по нажатию на кнопку 
       var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id 
       $(popup_id).show(); // Открываем окно
@@ -65,6 +83,57 @@ $(document).ready(function() {
     $('.overlay_popup').click(function() { // Обрабатываем клик по заднему фону
       $('.overlay_popup, .popup').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
     })
+
+    $(".reviews__list.owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      responsive:{
+          0:{
+              nav: true,
+              items:1
+          },
+          600:{
+              nav: true,
+              items:3
+          }
+      }
+    });
+
+    $(".likeit__slider.owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      responsive:{
+          0:{
+              nav: true,
+              items:1
+          },
+          600:{
+              nav: true,
+              items:3
+          }
+      }
+    });
+
+    $(".hotel__images--mob.owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      responsive:{
+          0:{
+              nav: true,
+              items:1
+          },
+          600:{
+              nav: true,
+              items:3
+          }
+      }
+    });
   
  });  
 
