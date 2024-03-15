@@ -48,6 +48,15 @@ $(document).ready(function() {
       $(".fly.many").toggleClass('show');
     });
 
+    $(".class__item").click(function() {
+      $(".class__item").toggleClass('active');
+    });
+
+    $('.class__item').on('click', function(){
+      $('.class__item').toggleClass('active');
+      $(this).toggleClass('active');
+    });
+
     $('.show_popup').click(function() { // Вызываем функцию по нажатию на кнопку 
       var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id 
       $(popup_id).show(); // Открываем окно
@@ -75,6 +84,21 @@ $(document).ready(function() {
 //  }
 
 var acc = document.getElementsByClassName("notifications__item--accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.acc;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+var acc = document.getElementsByClassName("filters__item");
 var i;
 
 for (i = 0; i < acc.length; i++) {
