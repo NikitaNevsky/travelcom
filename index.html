@@ -96,7 +96,7 @@
 		</header>
 
 		<main>
-			<section class="offer">
+			<section class="offer offer-flights">
 				<div class="offer__container">
 					<div class="offer__title">
 						Knows what you need
@@ -104,13 +104,13 @@
 					<div class="selene-form">
 						<ul class="selene-form__list">
 							<li>
-								<a href="#flights" class="selene-form__item active">
+								<a href="#flights" class="selene-form__item flights__item active">
 									<img src="img/icons/flightsmode.svg" alt="flightsmode">
 									<span>Flights</span>
 								</a>
 							</li>
 							<li>
-								<a href="#hotels" class="selene-form__item">
+								<a href="#hotels" class="selene-form__item hotels__item">
 									<img src="img/icons/hotel.svg" alt="hotels">
 									<span>Hotels</span>
 								</a>
@@ -122,7 +122,7 @@
 								</a>
 							</li>
 						</ul>
-						<div class="selene-form__search">
+						<div class="selene-form__search search-flights show">
 							<div class="form__search">
 								<div class="form__search--top">
 									<div class="top__item">
@@ -255,6 +255,104 @@
 								</div>
 							</div>
 						</div>
+						<div class="selene-form__search search-hotels">
+							<div class="form__search">
+								<div class="form__search--form">
+									<form class="form">
+										<div class="form__row">
+											<div class="form__input">
+												<input type="text" placeholder="From">
+											</div>
+											<div class="form__date">
+												<button>2/03/24</button>
+												<div class="date__nights">6 nights</div>
+												<button>16/04/24</button>
+											</div>
+											<button class="form__passenger form__passenger--hotels">
+												<div class="form__passenger--left">
+													<span>1 room, 1 adults, 1 children</span>
+												</div>
+												<div class="form__passenger--right">
+													<img src="img/icons/btn-right.svg" alt="btn right">
+												</div>
+											</button>
+											<div class="main__hotels--class">
+												<div class="class__container">
+													<div class="class__label">
+														Number of stars
+													</div>
+													<div class="class__list">
+														<div class="class__item">
+															2
+															<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+															</svg>
+														</div>
+														<div class="class__item">
+															3
+															<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+															</svg>
+														</div>
+														<div class="class__item">
+															4
+															<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+															</svg>
+														</div>
+														<div class="class__item">
+															5
+															<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="main__hotels--class class__desk">
+											<div class="class__container">
+												<div class="class__label">
+													Number of stars
+												</div>
+												<div class="class__list">
+													<div class="class__item">
+														2
+														<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+														</svg>
+													</div>
+													<div class="class__item">
+														3
+														<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+														</svg>
+													</div>
+													<div class="class__item">
+														4
+														<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+														</svg>
+													</div>
+													<div class="class__item">
+														5
+														<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M7 1.61803L8.09607 4.99139L8.20833 5.33688H8.5716H12.1186L9.24901 7.42173L8.95511 7.63526L9.06737 7.98075L10.1634 11.3541L7.29389 9.26925L7 9.05573L6.70611 9.26925L3.83656 11.3541L4.93263 7.98075L5.04489 7.63526L4.75099 7.42173L1.88145 5.33688H5.4284H5.79167L5.90393 4.99139L7 1.61803Z" fill="white" stroke="#207FBF"/>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form__button">
+											<button class="btn">
+												<img src="img/icons/search.svg" alt="search">
+												Search
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -264,43 +362,43 @@
 						Trending directions
 					</div>
 					<div class="directions__list">
-						<a href="#" class="directions__item">
+						<a href="news-rome.html" class="directions__item">
 							<img src="img/images/image-1.png" alt="image 1">
 							<div class="directions__country">
 								<span>Rome</span>
 								<img src="img/images/rome.png" alt="rome">
 							</div>
 						</a>
-						<a href="#" class="directions__item">
+						<a href="news-paris.html" class="directions__item">
 							<img src="img/images/image-2.png" alt="image 2">
 							<div class="directions__country">
 								<span>Paris</span>
 								<img src="img/images/paris.png" alt="paris">
 							</div>
 						</a>
-						<a href="#" class="directions__item">
+						<a href="news-london.html" class="directions__item">
 							<img src="img/images/image-3.png" alt="image 3">
 							<div class="directions__country">
 								<span>London</span>
 								<img src="img/images/london.png" alt="london">
 							</div>
 						</a>
-						<a href="#" class="directions__item">
+						<a href="news-maldives.html" class="directions__item">
 							<img src="img/images/image-4.png" alt="image 4">
 							<div class="directions__country">
 								<span>Maldives</span>
 								<img src="img/images/maldives.png" alt="maldives">
 							</div>
 						</a>
-						<a href="#" class="directions__item">
+						<a href="news-bali.html" class="directions__item">
 							<img src="img/images/image-5.png" alt="image 5">
 							<div class="directions__country">
 								<span>Bali</span>
 								<img src="img/images/bali.png" alt="bali">
 							</div>
 						</a>
-						<a href="#" class="directions__item">
-							<img src="img/images/image-5.png" alt="image 6">
+						<a href="news-rio.html" class="directions__item">
+							<img src="img/images/image-6.png" alt="image 6">
 							<div class="directions__country">
 								<span>Rio de Janeiro</span>
 								<img src="img/images/rio.png" alt="Rio de Janeiro">
@@ -755,7 +853,7 @@
 					<label for="remember2" class="popup__form--label">Remember me</label>
 				</div>
 				<div class="popup__small">
-					Already have an account? <a href="#"class="show_popup" rel="popup1">Log in.</a>
+					Already have an account? <a href="#"class="show_popup show_popup2" rel="popup1">Log in.</a>
 				</div>
 				<button class="popup__btn btn">
 					Registr
