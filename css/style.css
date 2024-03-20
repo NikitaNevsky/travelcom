@@ -2211,6 +2211,7 @@ body.main {
 .orders__flights--price {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   font-size: 36px;
   line-height: 44px;
   font-weight: bold;
