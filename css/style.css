@@ -377,7 +377,15 @@ input[type=number]::-webkit-inner-spin-button {
 .offer {
   padding-top: 180px;
   padding-bottom: 150px;
+}
+
+.offer.offer-flights {
   background: url('../img/images/main-image.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+.offer.offer-hotels {
+  background: url('../img/images/hotels-bg.jpg') no-repeat center top;
   background-size: cover;
 }
 
@@ -432,6 +440,22 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: -6px;
 }
 
+.search-flights {
+  display: none;
+}
+
+.search-flights.show {
+  display: block;
+}
+
+.search-hotels {
+  display: none;
+}
+
+.search-hotels.show {
+  display: block;
+}
+
 .form__search--dropdown {
   display: flex;
   align-items: center;
@@ -455,6 +479,10 @@ input[type=number]::-webkit-inner-spin-button {
 
 .form__search--form {
   margin-top: 33px;
+}
+
+.search-hotels .form__search--form {
+  margin-top: 10px;
 }
 
 .form__row {
@@ -1883,10 +1911,13 @@ body.main {
 
 .chat__write--message {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 21px 30px;
+  padding: 21px 15px 21px 30px;
   background: #ffffff;
   border-radius: 10px 0 10px 10px;
+  max-height: 102px;
+  overflow: hidden;
 }
 
 .chat__write--message textarea {
@@ -2009,6 +2040,7 @@ body.main {
 .blog-card__info--img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .blog-card__info--top {
@@ -2177,12 +2209,18 @@ body.main {
 }
 
 .orders__flights--price {
+  display: flex;
+  align-items: center;
   font-size: 36px;
   line-height: 44px;
   font-weight: bold;
   color: #000000;
   text-align: right;
   margin-bottom: 25px;
+}
+
+.orders__flights--price .cart {
+  display: none;
 }
 
 .orders__flights--more {
@@ -2402,6 +2440,9 @@ body.main {
 }
 
 .services__button {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
   margin-top: 8px;
 }
 
@@ -2521,6 +2562,12 @@ body.main {
 .person {
   color: #9B9B9A;
   line-height: 20px;
+}
+
+.orders__rooms--button {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .orders__rooms--button .btn {
@@ -2821,6 +2868,11 @@ body.main {
   width: 210px;
   height: 66px;
   padding: 20px 50px;
+}
+
+.form__search--form .main__hotels--class.class__desk {
+  display: block;
+  margin-top: 25px;
 }
 
 .main__flights--content {
@@ -4014,6 +4066,80 @@ body.main {
 
 .hotel__images--mob {
   display: none!important;
+}
+
+/*---------- File chat -------*/
+
+.input-file-row {
+	display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+  transition: all 0.3s ease;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Hover/Active */
+.input-file:hover span {
+  opacity: 0.7;
+}
+.input-file:active span {
+  opacity: 0.9;
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
+ 
+/* Список файлов */
+.input-file-list {
+	padding: 5px 0 0;
+  max-width: 100px;
+}
+.input-file-list-item {
+  display: inline-flex;
+}
+.input-file-list-remove {
+	color: #949494;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.input-file-list-name {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 14px;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.main__faq {
+  padding-top: 105px;
 }
 
 @media (max-width: 992px) {
@@ -5792,6 +5918,42 @@ body.main {
   .reviews__list {
     flex-direction: column;
     row-gap: 20px;
+  }
+
+  .top__item--info {
+    left: 0;
+  }
+
+  .cart {
+    width: 29px;
+    height: 29px;
+  }
+
+  .cart img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .orders__rooms--button {
+    column-gap: 15px;
+  }
+
+  .orders__flights--price {
+    column-gap: 18px;
+  }
+
+  .orders__flights--price .cart {
+    display: block;
+    width: 21px;
+    height: 21px;
+  }
+
+  .main__faq {
+    padding-top: 75px;
+  }
+
+  .form__search--form .main__hotels--class.class__desk {
+    display: none;
   }
   
 }
