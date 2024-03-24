@@ -389,6 +389,11 @@ input[type=number]::-webkit-inner-spin-button {
   background-size: cover;
 }
 
+.offer.offer-travel {
+  background: url('../img/images/hotels-bg.jpg') no-repeat center top;
+  background-size: cover;
+}
+
 .offer__title {
   font-size: 48px;
   color: #ffffff;
@@ -453,6 +458,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .search-hotels.show {
+  display: block;
+}
+
+.search-travel {
+  display: none;
+}
+
+.search-travel.show {
   display: block;
 }
 
@@ -3128,6 +3141,10 @@ body.main {
   background: rgb(243, 243, 243);
 }
 
+.body__help {
+  background: #ffffff;
+}
+
 .way__button {
   display: flex;
   align-items: center;
@@ -4141,6 +4158,96 @@ body.main {
 
 .main__faq {
   padding-top: 105px;
+}
+
+.form__text {
+  max-width: 687px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  margin: 37px auto 72px;
+}
+
+.search-travel .form__button {
+  justify-content: center;
+}
+
+.main__help {
+  padding-top: 105px;
+  padding-bottom: 35px;
+}
+
+.help__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 6px 11px;
+  border-radius: 10px;
+  background: #207FBF;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  margin-bottom: 35px;
+}
+
+.help__back:hover {
+  background: #126CA9;
+  color: #ffffff;
+}
+
+.help__info {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 100px;
+  padding: 30px 51px 30px 30px;
+  background: #207FBF;
+  border-radius: 10px;
+}
+
+.help__left {
+  max-width: 635px;
+}
+
+.help__info .write__form {
+  flex-direction: column;
+}
+
+.help__info .write__title {
+  margin: 0;
+  margin-bottom: 59px;
+  max-width: 100%;
+}
+
+.help__info .contacts__item--title {
+  color: #ffffff;
+}
+
+.help__info .contacts__item--info {
+  color: #ffffff;
+}
+
+.help__info .contacts__item--info a {
+  color: #ffffff;
+}
+
+.help__info .contacts__item:first-child .contacts__item--title svg {
+  width: 20px;
+  height: 29px;
+}
+
+.help__info .contacts__item--title svg {
+  margin-right: 15px;
+}
+
+.help__info .contacts__item:nth-child(2) .contacts__item--title svg {
+  width: 29px;
+  height: 36px;
+  margin-right: 10px;
 }
 
 @media (max-width: 992px) {
@@ -5955,6 +6062,92 @@ body.main {
 
   .form__search--form .main__hotels--class.class__desk {
     display: none;
+  }
+
+  .help__container {
+    padding: 0;
+  }
+
+  .main__help {
+    padding-top: 75px;
+    padding-bottom: 0;
+  }
+
+  .help__info {
+    padding: 0;
+  }
+
+  .help__back {
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 20px 15px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .help__info {
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 0;
+    padding: 0 0 30px 0;
+  }
+
+  .help__left {
+    background: #207FBF;
+    padding: 10px 14px 13px 14px;
+  }
+
+  .help__info .write__title {
+    max-width: 285px;
+    margin: 0 auto 24px;
+  }
+
+  .help__right {
+    padding: 30px 14px;
+  }
+
+  .help__info .contacts__item--title {
+    color: #207FBF;
+  }
+
+  .help__info .contacts__item .contacts__item--title svg path {
+    fill: #207FBF;
+  }
+
+  .help__info .contacts__item:first-child .contacts__item--title svg {
+    width: 14px;
+    height: 20px;
+    margin-right: 13px;
+  }
+
+  .help__info .contacts__item:nth-child(2) .contacts__item--title svg {
+    width: 26px;
+    height: 21px;
+    margin-right: 5px;
+  }
+
+  .help__info .contacts__item--info {
+    color: #207FBF;
+  }
+
+  .help__info .contacts__item--info a {
+    color: #207FBF;
+  }
+
+  .help__info .contacts__item--info a svg path {
+    fill: #207FBF;
+  }
+
+  .form__text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-bottom: 90px;
   }
   
 }
