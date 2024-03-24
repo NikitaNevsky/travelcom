@@ -31,19 +31,37 @@ $(document).ready(function() {
     $(".flights__item").click(function() {
       $(".flights__item").addClass('active');
       $(".hotels__item").removeClass('active');
+      $(".travel__item").removeClass('active');
       $(".search-flights").addClass('show');
       $(".search-hotels").removeClass('show');
+      $(".search-travel").removeClass('show');
       $(".offer").addClass('offer-flights');
       $(".offer").removeClass('offer-hotels');
+      $(".offer").removeClass('offer-travel');
     });
 
     $(".hotels__item").click(function() {
       $(".hotels__item").addClass('active');
       $(".flights__item").removeClass('active');
+      $(".travel__item").removeClass('active');
       $(".search-hotels").addClass('show');
       $(".search-flights").removeClass('show');
+      $(".search-travel").removeClass('show');
       $(".offer").addClass('offer-hotels');
       $(".offer").removeClass('offer-flights');
+      $(".offer").removeClass('offer-travel');
+    });
+
+    $(".travel__item").click(function() {
+      $(".travel__item").addClass('active');
+      $(".flights__item").removeClass('active');
+      $(".hotels__item").removeClass('active');
+      $(".search-travel").addClass('show');
+      $(".search-flights").removeClass('show');
+      $(".search-hotels").removeClass('show');
+      $(".offer").addClass('offer-travel');
+      $(".offer").removeClass('offer-flights');
+      $(".offer").removeClass('offer-hotels');
     });
 
     $(".form__search--type").click(function() {
